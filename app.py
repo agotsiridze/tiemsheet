@@ -4,6 +4,7 @@ import datetime
 import pandas as pd
 from email.message import EmailMessage
 import smtplib
+from time import sleep
 
 def define_date():
     date_now = {
@@ -358,5 +359,6 @@ worksheet.write(49,7,"-",GRAY_BG)
 
 file.close()
 
-# create_mail("a.gotsiridze@ssu.edu.ge", "timesheet", "thecarrymehome@gmail.com")
+
+sleep(10)
 send_mail(arrival_email, pw, departure_email)
